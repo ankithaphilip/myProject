@@ -1,6 +1,6 @@
 resource "aws_ecs_task_definition" "express_app" {
   family                   = "express-app"
-  network_mode             = "awsvpc"
+  network_mode             = "awsvpc" 
   requires_compatibilities = ["FARGATE"]
   cpu                      = 1024
   memory                   = 2048
